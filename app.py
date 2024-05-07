@@ -185,7 +185,7 @@ sl.write("🤖 You can chat by Entering your queries ")
 def load_knowledgeBase():
         embeddings=OpenAIEmbeddings(api_key=api_key)
         DB_FAISS_PATH = 'vectorstore/db_faiss'
-        db = FAISS.load_local(DB_FAISS_PATH, embeddings)
+        db = FAISS.load_local(DB_FAISS_PATH, embeddings, allow_dangerous_deserialization=True)
         return db
         
 #function to load the OPENAI LLM
