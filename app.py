@@ -147,7 +147,7 @@ with sl.sidebar:
      sl.write("\n")
      sl.write("\n")
      sl.write("\n")
-     sl.image('vit_logo.png', caption='Made by Rashi Solanki, Veer Sanghavi and Onkar Chincholkar')
+     sl.image('vit_logo.png', caption='Made by Rashi Solanki and Veer Sanghavi')
 
 if "history" + current_chat not in sl.session_state:
     for key, value in load_data(sl.session_state["path"], current_chat).items():
